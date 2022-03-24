@@ -1,0 +1,313 @@
+@font-face{
+    font-family: "cyberpunuk2";
+    src: url('Fuentes/Cybrpnuk2.ttf');
+  }
+  
+  @font-face{
+    font-family: "MyriadPro-Regular";
+    src: url('Fuentes/MyriadPro-Regular.otf') format('otf');
+  }
+  
+  @font-face{
+    font-family: "Airbnb-Medium";
+    src: url('Fuentes/AirbnbCerealMedium.ttf');
+  }
+  
+  body {
+      margin-top: 7rem;
+      background-color: #232323; 
+  }
+  
+  main {
+    margin-top: 15em;
+    margin-left: 12%;
+    margin-right: 12%;
+  }
+  nav {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #E9725D;
+    font-size: 1rem;
+    background-color: #232323; 
+    }
+    nav.navbar {
+      background-color: #232323;
+      color: #F2F2F2;
+    }
+    nav .navbar .fixed-top{
+      position: fixed;
+      padding: 2px;
+    }
+  
+    img.logo-navbar {
+    width: 150px;
+  }
+  
+  img.logo-navbar:hover{
+    width: 150px;
+  }
+
+  .nav-item a:hover{
+    color: #E9725D;
+  }
+
+  .nav-item .boton:hover{
+    transform: scale(1.1);
+  }
+
+  .menu-redes{
+    width: 25%;
+    display: flex;
+    justify-content: end;
+    margin-right: 5%;
+  }
+  
+  nav .container {
+    margin-left: 5%;
+  }
+  .navegacion ul {
+    margin-left: 5%;
+  }
+    @media (max-width: 371px) {
+      img.logo-navbar {
+        width: 150px; } }
+  
+    nav .navbar-brand{
+      padding-top: 0rem;
+      padding-bottom: 0rem;
+      margin-left: 0rem;
+     margin-right: 5rem;
+      }
+    nav .dropdown-item {
+      color: #F2F2F2;
+      font-family: 'Montserrat', sans-serif; }
+    nav img:hover {
+      width: 255px; }
+    nav li.nav-item {
+      margin-left: 1rem;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 8px;
+      color: #F2F2F2;
+       }
+
+       a {
+        color: #E9725D; }
+        a:hover {
+          color: #E9725D;
+          text-decoration: none; }
+        a.nav-link{
+          font-family: 'Montserrat', sans-serif;
+          font-size: 14px;
+          color: #F2F2F2;
+        }  
+        a.nav-link.boton{
+          background-color: #FF6862;
+          color: #F2F2F2;
+          border-radius: 10px;
+          font-family: 'Montserrat', sans-serif;} ;
+        
+        a.boton {
+          background-color: #E9725D;
+          border-radius: 10px;
+          font-family: 'Montserrat', sans-serif; }
+        a.dona {
+          font-family: 'Montserrat', sans-serif;;
+          background-color: #EFEBC8;
+          border-radius: 10px;
+          padding: 0.5rem;
+          margin-top: 2rem; }
+          a.dona:hover {
+            text-decoration: none; }
+        a.sumate {
+          font-family: 'Montserrat', sans-serif;;
+          background-color: #EFEBC8;
+          border-radius: 10px;
+          padding: 0.5rem;
+          margin-top: 2rem;
+          color: #5D8B80; }
+          a.sumate:hover {
+            text-decoration: none;
+            color: #E9725D; }
+      
+      ul.trabajo {
+        list-style-type: none;
+        padding: 0; }
+      
+      li {
+        font-family: 'Montserrat', sans-serif; }
+        li.menu {
+          font-family: 'Montserrat', sans-serif;
+          padding-top: 1rem;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+          height: 3rem;
+          width: 15rem;
+          box-sizing: content-box;
+          text-align: center; }
+          @media (max-width: 768px) {
+            li.menu {
+              width: 100%;
+              border-radius: 10px; } }
+      
+/* FIN HEADER*/   
+
+
+/* footer*/
+
+footer {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-top: 12rem;
+    background-color: #FF6862;
+    padding-top: 2rem; }
+    footer nav {
+      display: flex;
+      justify-content:space-around;
+      background-color: #FF6862;
+      width: 300px;
+     }
+      footer nav a {
+        padding: 0.7rem 1.2rem 2rem 1.2rem; }
+        footer nav a:hover {
+          opacity: 0.5; }
+  
+        footer div div h6 {
+          color: #F2F2F2;
+          font-size: 1rem;
+          display: flex;
+          justify-content: center;
+         }
+  
+         footer p{
+          color: #F2F2F2;
+          font-size: 0.9rem;
+          padding-top: 0.6rem;
+          padding-left: 1rem;
+         }
+    
+  .container-footer {
+    display: flex;
+    justify-content:space-around;
+  }
+  
+  .logo2{
+    width: 141px;
+    height: 141px;
+    margin-top: -1.5rem;
+  }
+  
+  .footer-news h6{
+    display: flex;        
+    justify-content: end;
+    align-items: flex-end;
+  }
+  
+  .menu-redes a{
+    margin:10px ;
+  }
+  
+  .whatsapp h6{
+   margin: 0 auto;
+  }
+  
+  
+  .whatsapp div {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.3rem;
+  }
+  
+  /*footer responsive*/
+  @media screen and (min-width: 310px) and (max-width: 700px) {
+  footer {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-top: 12rem;
+    background-color: #FF6862;
+    padding-top: 2rem; }
+    footer nav {
+      margin: 0 auto;
+      display: flex;
+      background-color: #FF6862;
+     }
+      footer nav a {
+        padding: 0.7rem 1.2rem 2rem 1.2rem; }
+        footer nav a:hover {
+          opacity: 0.5; }
+  
+        footer div div h6 {
+          color: #F2F2F2;
+          font-size: 1rem;
+          display: flex;
+          justify-content: center;
+         }
+  
+         footer p{
+          color: #F2F2F2;
+          font-size: 0.9rem;
+          padding-top: 0.6rem;
+          padding-left: 1rem;
+         }
+  .container-footer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .logo2{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    
+  
+  }
+  
+  .footer-news h6{
+    display: flex;        
+    justify-content: center;
+  }
+  
+  .menu-redes a{
+    margin:10px ;
+  }
+  
+  .navbar .container .seleecion-navbar{
+    color: #FF6862;
+  }
+  
+  .whatsapp h6{
+   margin: 0 auto;
+  }
+  
+  
+  .whatsapp div {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.3rem;
+  }
+} 
+  
+main {
+    text-align: center;
+    margin-top: 15rem
+}
+
+h1 {
+    margin-top: 3rem;
+    font-family: "cyberpunuk2";
+    color: #FF6862;
+    font-size: 20px;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 14px;
+}
+
+main a {
+    margin-top: 7rem;
+    color: #FF6862;
+    text-decoration: none;
+}

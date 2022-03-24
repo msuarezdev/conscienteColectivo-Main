@@ -1,0 +1,14 @@
+@font-face{
+font-family: 'Cybrpnuk2';
+src: url(Fuentes/Cybrpnuk2.ttf);
+ }
+
+@font-face{
+  font-family: 'Cereal1';
+  src: url(Fuentes/AirbnbCerealExtraBold.ttf);
+}
+
+@font-face{
+  font-family: 'Cereal2' ;
+  src: url(Fuentes/AirbnbCerealBook.ttf);
+}

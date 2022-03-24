@@ -1,0 +1,861 @@
+$primary: #E9725D;
+$verde-oscuro: #1B4D41;
+$azul: #2D575C;
+$gris-oscuro: #5D8B80;
+$verde-claro: #41B28E;
+$celeste: #98D4E8;
+$naranja: #E49925;
+$gris-claro: #EFEBC8;
+$blanco: #fff;
+
+$sub-destacada: 'Righteous', cursive;
+$general: 'Raleway', sans-serif;
+
+body{
+    margin-top: 7rem;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: $sub-destacada;
+    color: $primary;
+    text-align: center;
+}
+
+h1{
+    text-transform: uppercase;
+    &.titulo-involucrate{
+        margin: 3rem 0;
+    }
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h3{
+    &.frase{
+        font-size: 3.5rem;
+        text-align: center;
+        margin: 1.5rem;
+        @media (max-width:768px){
+            font-size: 2.5rem;
+        }
+        @media (max-width:576px){
+            font-size: 2rem;
+        }
+    }
+}
+
+h4{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+p{
+    font-family: $general;
+    &.semidestacado{
+        font-weight: 700;
+    }
+}
+
+a{
+    color: $primary;
+    &:hover{
+        color: $gris-oscuro;
+        text-decoration: none;
+    }
+    &.boton{
+        background-color: $gris-claro;
+        border-radius: 10px;
+        font-family: $sub-destacada;
+    }
+    &.dona{
+        font-family: $sub-destacada;
+        background-color: $gris-claro;
+        border-radius: 10px;
+        padding:0.5rem;
+        margin-top: 2rem;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    &.sumate{
+        font-family: $sub-destacada;
+        background-color: $gris-claro;
+        border-radius: 10px;
+        padding: 0.5rem;
+        margin-top: 2rem;
+        color: $gris-oscuro;
+        &:hover{
+            text-decoration: none;
+            color: $primary;
+        }
+    }
+}
+
+ul{
+    &.trabajo{
+        list-style-type: none;
+        padding: 0;
+    } 
+}
+
+li{
+    font-family: $general;
+    &.menu{
+        font-family: $sub-destacada;
+        padding-top: 1rem;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius:10px;
+        height: 3rem;
+        width: 15rem;
+        box-sizing: content-box;
+        text-align: center;
+        @media (max-width: 768px) {
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+}
+
+div{
+    &.titulos-proyectos{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        background-color: $gris-claro;
+       /*  border-radius: 10px; */
+        padding: 0 2rem 1.5rem 2rem;
+        /* margin-bottom: 2rem; */
+    }
+    &#titulo-etiquetado{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    &#titulo-accion{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+    }
+    &.informacion-proyectos{
+        display: none;
+        background-color: $gris-claro;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        padding: 2rem;
+        img{
+            margin-bottom: 1rem;
+        }
+        p{
+            margin-top: 1rem;
+        }
+    }
+    &.involucrate{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        @media (max-width:576px){
+            /* display: block;
+            text-align: center; */
+            gap: 0;
+        }
+    }
+    &.proyectos, &.busquedas{
+        margin-bottom: 3rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        display: flex;
+        justify-content: baseline;
+        @media (max-width:576px){
+            text-align: center;
+            display: block;
+        }
+        .item1{
+            padding-right: 3rem;
+            @media (max-width:576px){
+                padding-right: 0;
+            }
+        }
+        .item2-proyectos{
+            padding-top: 1rem;
+        }
+    }
+    &.img{
+        text-align: center;
+    }
+    &.valores{
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        justify-content: space-evenly;
+        @media (max-width:992px){
+            img{
+                width: 200px;
+            }
+            }
+        @media (max-width:768px){
+        display: block;
+        img{
+            width: 300px;
+        }
+        }
+        img{
+            border-radius: 50%;
+        }
+    }
+    &.img-quienes-somos{
+        text-align: center;
+    }
+    &.img-index1{
+        width: 300px;
+        height: 300px;
+        background-image: url(../img/6.png);
+        border-radius: 50%;
+        margin-top: 2rem;
+        &:hover{
+            div.img-info{
+                visibility: visible;
+            }
+        }
+    }
+    &.img-index2{
+        width: 300px;
+        height: 300px;
+        background-image: url(../img/7m.jpg);
+        border-radius: 50%;
+        margin-top: 2rem;
+        &:hover{
+            div.img-info{
+                visibility: visible;
+            }
+        }
+    }
+    &.img-index3{
+        width: 300px;
+        height: 300px;
+        background-image: url(../img/8.jpg);
+        border-radius: 50%;
+        margin-top: 2rem;
+        &:hover{
+            div.img-info{
+                visibility: visible;
+            }
+        }
+    }
+    &.img-info{
+        width: 300px;
+        height: 300px;
+        background-color: $azul;
+        opacity: 0.9;
+        border-radius: 50%;
+        visibility: hidden;
+        text-transform: uppercase;
+        a{
+            text-decoration: none;
+        }
+        h6{
+            font-size: 2.5rem;
+            padding-top: 35%;
+        }
+    }
+    $libros:libro1, libro2, libro3, libro4, libro5, libro6, libro7, libro8, libro9, libro10, libro11, libro12, libro13, libro14, libro15, libro16, libro17, libro18, libro19, libro20, libro21, libro22, libro23, libro24, libro25, libro26, libro27, libro28, libro29, libro30, libro31, libro32, libro33, libro34, libro35, libro36;
+    @each $libro in $libros {
+        &.#{$libro}{
+            width: 300px;
+            height: 450px;
+            background-image: url(../img/libros/#{$libro}.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            &:hover{
+                div.info-#{$libro}{
+                    visibility: visible;
+                }
+                p{
+                    color: $gris-claro;
+                }
+            }
+        }
+        &.info-#{$libro}{
+            width: 300px;
+            height: 450px;
+            background-color: $azul;
+            border-radius: 10px;
+            visibility: hidden;
+            padding: 1rem;
+            h4{
+                font-size: 1.2rem;
+            }
+            h5, p{  
+                font-size: 0.9rem;
+            }
+            }
+    }
+    &.info-libro24, &.info-libro32{
+        height: 550px;
+    }
+    &.info-libro36{
+        height: 575px;
+    }
+    &.sin-foto{
+        width: 300px;
+        height: 450px;
+        border-radius: 10px;
+        padding: 1rem;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.25);
+        text-align: center;
+        h4{
+            font-size: 1.2rem;
+        }
+        h5, p{  
+            font-size: 0.9rem;
+        }
+    }
+    &#busquedas-laborales{
+        display: flex;
+        h3, h4, h5{
+            color: $gris-claro;
+        }
+        @media (max-width:768px){
+            display: block;
+        }
+    }
+    &.libros, &.documentales, &.peliculas, &.mas{
+        display: grid;
+        grid-template-columns: repeat(3, 27%);
+        justify-content: space-around;
+        @media (max-width:992px){
+            grid-template-columns: repeat(2, auto);
+            column-gap: 1rem;
+        }
+        @media (max-width:576px){
+            display: block;
+            padding-left: 2.5rem;
+            h3{
+                padding-right: 4.5rem;
+            }
+        }
+        section{
+            text-align: center;
+            &>div{
+               /*  border: solid; */
+                margin-bottom: 1rem;
+                /* padding: 2rem 1rem 2rem 1rem; */
+            }
+        }
+    }
+    $documentales: documental1, documental2, documental3, documental4, documental5, documental6, documental7, documental8, documental9, documental10, documental11, documental12, documental13, documental14, documental15, documental16, documental17, documental18, documental19, documental20, documental21, documental22, documental23, documental24, documental25, documental26, documental27, documental28, documental29, documental30, documental31, documental32, documental33, documental34, documental35, documental36;
+    @each $documental in $documentales{
+        &.#{$documental}{
+            width: 300px;
+            height: 450px;
+            background-image: url(../img/documentales/#{$documental}.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            &:hover{
+                div.info-#{$documental}{
+                    visibility: visible;
+                }
+                p{
+                    color: $gris-claro;
+                }
+            }
+        }
+        &.info-#{$documental}{
+            width: 300px;
+            height: 450px;
+            background-color: $azul;
+            border-radius: 10px;
+            visibility: hidden;
+            padding: 1rem;
+            h4{
+                font-size: 1.2rem;
+            }
+            h5, p{  
+                font-size: 0.9rem;
+            }
+            }
+    }
+    $peliculas: peli1, peli2, peli3, peli4, peli5, peli6, peli7, peli8, peli9, peli10, peli11, peli12, peli13, peli14, peli15, peli16, peli17, peli18, peli19, peli20, peli21, peli22, peli23, peli24, peli25, peli26, peli27, peli28, peli29, peli30, peli31, peli32, peli33, peli34, peli35, peli36;
+    @each $peli in $peliculas{
+        &.#{$peli}{
+            width: 300px;
+            height: 450px;
+            background-image: url(../img/peliculas/#{$peli}.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            &:hover{
+                div.info-#{$peli}{
+                    visibility: visible;
+                }
+                p{
+                    color: $gris-claro;
+                }
+            }
+        }
+        &.info-#{$peli}{
+            width: 300px;
+            height: 450px;
+            background-color: $azul;
+            border-radius: 10px;
+            visibility: hidden;
+            padding: 1rem;
+            h4{
+                font-size: 1.2rem;
+            }
+            h5, p{  
+                font-size: 0.9rem;
+            }
+            }
+    }
+    
+    $mas-recursos: mas1, mas2, mas3, mas4, mas5, mas6, mas7, mas8, mas9, mas10, mas11, mas12, mas13, mas14, mas15, mas16, mas17, mas18, mas19, mas20, mas21, mas22, mas23, mas24, mas25, mas26, mas27, mas28, mas29, mas30, mas31, mas32, mas33, mas34, mas35, mas36;
+    @each $mas in $mas-recursos {
+        &.#{$mas}{
+            width: 300px;
+            height: 450px;
+            background-image: url(../img/mas/#{$mas}.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            &:hover{
+                div.info-#{$mas}{
+                    visibility: visible;
+                }
+                p{
+                    color: $gris-claro;
+                }
+            }
+        }
+        &.info-#{$mas}{
+            width: 300px;
+            height: 450px;
+            background-color: $azul;
+            border-radius: 10px;
+            visibility: hidden;
+            padding: 1rem;
+            h4{
+                font-size: 1.2rem;
+            }
+            h5, p{  
+                font-size: 0.9rem;
+            }
+            }
+    }
+    &.secciones-biblioteca{
+        background-color: $primary;
+        padding: 1rem 0;
+        h2{
+            color: $gris-claro;
+        }
+    }
+    &.encabezado-involucrate{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 2rem;
+        p{
+            color: $gris-claro;
+            text-align: center;
+        }
+        @media (max-width:768px){
+            display: block;
+            p{
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+img{
+    &.logo-navbar{
+        width: 250px;
+        @media (max-width:371px){
+            width: 150px;
+        }
+    }
+    &.proyectos{
+        border-radius: 10px;
+        @media (min-width:993px){
+            width: 960px;
+        }
+        @media (max-width:992px){
+            width: 700px;
+        }
+        @media (max-width:768px){
+            width: 500px;
+        }
+        @media (max-width:576px){
+            width: 420px;
+        }
+        @media (max-width:420px){
+            width: 300px;
+        }
+    }
+    &.img-quienes{
+        border-radius: 10px;
+    }
+}
+
+strong{
+    &.busquedas{
+        color: $primary;
+    }
+}
+
+nav{
+    font-family: $sub-destacada;
+    color: $primary;
+    font-size: 1rem;
+    &.navbar{
+        background-color: $blanco;
+    }
+    .dropdown-item{
+        color: $gris-oscuro;
+        font-family: $general;
+    }
+    img:hover{
+        width: 255px;
+    }
+    li.nav-item{
+        font-family: $sub-destacada;
+    }
+}
+
+footer{
+    background-color: $primary;
+    padding-top: 2rem;
+    nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        a{
+            padding: 0.7rem 1.2rem 2rem 1.2rem;
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+    h6{
+        color: $gris-claro;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+    &.footer-proyectos{
+        margin-top: 2rem;
+    }
+}
+
+main{
+    &.proyectos, &.busquedas{
+        background-color: $verde-oscuro;
+        color: $gris-claro;
+        h2{
+            color: $gris-claro;
+        }
+    }
+    &.biblioteca{
+        margin-top: 9rem;
+        background-color: $primary;
+        padding: 1.5rem 0;
+        margin-bottom: 2rem;
+        p, h1{
+            color: $gris-claro;
+            text-align: center;
+        }
+    }
+    &#involucrate{
+        background-color: $primary;
+        padding-bottom: 2rem;
+        h1{
+            color: $gris-claro;
+            padding-top: 1rem;
+        }
+    }
+}
+
+section{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    iframe{
+        border-radius: 2%;
+    }
+    div.proyectos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    &.escucha{
+        position: relative;
+        left: 100%;
+        @media (max-width:768px){
+            position: static;
+            }
+    }
+    &.iframe{
+        background-color: $primary;
+        padding: 3rem;
+    }
+    &.quienes-somos{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin:1rem 2rem 1rem 2rem;
+        .item-derecha{
+            padding-left: 3rem;
+        }
+        .item-izquierda{
+            padding-right: 3rem;
+        }
+        @media (max-width:992px){
+            img{
+                width: 350px;
+            }
+        }
+        @media (max-width:768px){
+            flex-direction: column;
+            .img-quienes-somos{
+                order: 1;
+            }
+            img{
+                max-width: 500px;
+            }
+            .item-derecha{
+                padding-left: 0rem;
+            }
+            .item-izquierda{
+                padding-right: 0rem;
+            }
+        }
+        @media (max-width:576px){
+            margin: 0;
+        }
+    }
+    &.toggle{
+        display: flex;
+        align-items: baseline;
+        gap: 1rem;
+        background-color: $gris-claro;
+        border-radius: 10px;
+        width: 20rem;
+        height: 2.5rem;
+        padding: 0.5rem 1rem;
+        h6{
+            text-align: left;
+        }
+        img{
+            &#toggle-derecha{
+                display: none;
+            }
+        }
+        p{
+            color: $primary;
+            font-family: $general;
+        }
+    }
+}
+
+article{
+    &#documentales, &#peliculas, &#libros, &#mas{
+        h3{
+            height: 4rem;
+        }
+    }
+    &#diferencial{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        p{
+            font-size: 0.9rem;
+            text-align: center;
+        }
+        h4{
+            font-size: 1.3rem;
+        }
+    }
+    &#quienes-somos{
+        background-color: $gris-claro;
+        padding-top:2rem;
+        padding-bottom: 2rem;
+        h1{
+            margin-bottom: 2rem;
+        }
+        h3{
+            margin-bottom: 2rem;
+        }
+    }
+    &#etiquetado{
+        h3{
+            margin-top: 2rem;
+        }
+        ol{
+            font-family: $general;
+            margin-bottom: 2rem;
+            line-height: 2rem;
+        }
+    }
+    &.gestion-menstrual{
+        h3{
+            margin-top: 2rem;
+        }
+        ol{
+            font-family: $general;
+            line-height: 2rem;
+        }
+    }
+    &#accion-barrial{
+        h3{
+            margin-top: 2rem;
+        }
+        p{
+            line-height: 2rem;
+        }
+    }
+    &#trabajo-territorial{
+        background-color: $verde-oscuro;
+        padding: 2rem 2rem 2rem 3rem;
+        color: $gris-claro;
+        margin-bottom: 2rem;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius:10px;
+        @media (max-width:768px){
+            border-radius: 10px;
+        }
+    }
+    &#logistica{
+        background-color: $verde-oscuro;
+        padding: 2rem 2rem 2rem 3rem;
+        color: $gris-claro;
+        margin-bottom: 2rem;
+        border-radius: 10px;
+    }
+    &#recaudador-fondos{
+        background-color: $azul;
+        padding: 2rem 2rem 2rem 3rem;
+        color: $gris-claro;
+        margin-bottom: 2rem;
+        border-radius: 10px;
+    }
+    &#community-manager{
+        background-color: $gris-oscuro;
+        padding: 2rem 2rem 2rem 3rem;
+        color: $gris-claro;
+        margin-bottom: 2rem;
+        border-radius: 10px;
+    }
+    &#editor-audiovisual{
+        background-color: $gris-oscuro;
+        padding: 2rem 2rem 2rem 3rem;
+        color: $gris-claro;
+        margin-bottom: 2rem;
+        border-radius: 10px;
+    }
+    &#diseniador-grafico{
+        background-color: $gris-oscuro;
+        padding: 2rem 2rem 2rem 3rem;
+        color: $gris-claro;
+        margin-bottom: 2rem;
+        border-radius: 10px;
+    }
+    &#asistente-twitter{
+        background-color: $gris-oscuro;
+        padding: 2rem 2rem 2rem 3rem;
+        color: $gris-claro;
+        margin-bottom: 2rem;
+        border-radius: 10px;
+    }
+    &#investigador-politico{
+        background-color: $verde-claro;
+        padding: 2rem 2rem 2rem 3rem;
+        color: $gris-claro;
+        margin-bottom: 2rem;
+        border-radius: 10px;
+    }
+    &#trabajo-territorial, &#logistica, &#recaudador-fondos, &#community-manager, &#editor-audiovisual, &#diseniador-grafico, &#asistente-twitter, &#investigador-politico{
+        display: none;
+        @media (max-width:768px){
+            padding: 2rem;
+        }
+    }
+    &#libros{
+        h4{
+            text-transform: uppercase;
+        }
+    }
+    &#dona{
+        border-radius: 10px;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.25);
+        width: 20rem;
+        height: 25rem;
+        text-align: center;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        h3{
+            color: $primary;
+            font-size: 2.5rem;
+        }
+        p{
+            color: $primary;
+            margin-bottom: 2rem;
+        }
+        @media (max-width:576px){
+            margin-left: auto;
+            height: 25rem;
+            h3{
+                font-size: 2rem;
+            }
+            /* width: 95%;
+            margin: auto;
+            height: 22rem;
+            margin-bottom: 1rem; */
+        } 
+    }
+    &#sumate{
+        border-radius: 10px;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.25);
+        width: 20rem;
+        height: 25rem;
+        text-align: center;
+        color: $gris-oscuro;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        h3{
+            color: $gris-oscuro;
+            font-size: 2.5rem;
+        }
+        p{
+            margin-bottom: 2rem;
+        }
+        @media (max-width:576px){
+            height: 25rem;
+            margin-right: auto;
+            h3{
+                font-size: 2rem;
+            }
+            /* width: 95%;
+            height: 22rem;
+            margin: auto; */
+        } 
+    }
+}
+
+@import "carrousel-biblioteca.scss";
+
+
+
+
